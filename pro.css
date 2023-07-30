@@ -1,0 +1,205 @@
+:root{
+    --mainColor: #0e73c5;
+}
+/*small*/
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+
+/*medium*/
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+
+/*larg*/
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.game{
+    background-color: #eee;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.game .nameGame{
+    background-color: var(--mainColor);
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.game .choseLevel{
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+.game .choseLevel .tag{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.game .choseLevel .levels{
+    padding: 20px;
+    text-align: center;
+}
+.game .choseLevel span{
+    background-color: #009688;
+    padding: 10px 20px;
+    margin: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 10px;
+    color: white;
+}
+@media (max-width: 768px){
+    .game .choseLevel span{
+        padding: 10px;
+    }
+    .game .choseLevel .levels{
+        line-height: 55px;
+    }
+}
+
+.selected{
+    background-color: #0e73c5 !important;
+}
+.game .container{
+    margin: auto;
+}
+.game .container .info{
+    background-color: white;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.game .container .info span{
+    color: var(--mainColor);
+    font-weight: bold;
+
+}
+.game .container .info span::before{
+    content: "[ ";
+}
+.game .container .info span::after{
+    content: " ]";
+}
+.game .container .startButton{
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    background-color: #009688;
+    font-weight:bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.game .container .theWord{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--mainColor);
+    user-select: none;
+}
+.game .container input{
+    width: 100%;
+    border: 4px var(--mainColor) solid;
+    text-transform: capitalize;
+    caret-color: var(--mainColor);
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+.game .container input:focus{
+    outline: none;
+}
+.game .container .words{
+    background-color: white;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.game .container .words div{
+    margin: 0 10px 10px 0;
+    background-color: var(--mainColor);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    user-select: none;
+}
+.game .container .control{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.game .container .control span{
+    color: var(--mainColor);
+    font-weight: bold;
+}
+.bad,
+.good{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px;
+}
+.stop{
+    pointer-events: none;
+}
+.name{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    text-align: center;
+}
+.name span{
+    display: block;
+    font-weight: bold;
+    color: #0e73c5;
+    font-size: 40px;
+}
+
+
+
+
